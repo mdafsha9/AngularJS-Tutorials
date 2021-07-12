@@ -1,15 +1,27 @@
 h1{
   text-align:center;
   font-family:papyrus;
+  color:#0000b3;
+  background-color:#e6e6ff;
+  border:6px solid #e6e6ff;
+  outline-offset:2px;
+  outline:2px solid #ccccff;
 }
 body{
   margin-left:25px;
   font-family:Tahoma;
+  border:2px solid #000066;
+  padding:5px;
 }
 h2, h3{
   font-family:oldtown;
   margin-bottom:5px;
+  color:navy;
 }
 p{
   margin-top:0px;
+}
+dt{
+  font-weight:bold;
+  text-decoration:underline;
 }

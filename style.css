@@ -1,3 +1,15 @@
 h1{
   text-align:center;
+  font-family:papyrus;
+}
+body{
+  margin-left:25px;
+  font-family:Tahoma;
+}
+h2, h3{
+  font-family:oldtown;
+  margin-bottom:5px;
+}
+p{
+  margin-top:0px;
 }

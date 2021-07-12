@@ -5,12 +5,12 @@ h1{
   background-color:#e6e6ff;
   border:6px solid #e6e6ff;
   outline-offset:2px;
-  outline:2px solid #ccccff;
+  outline:5px solid #ccccff;
 }
 body{
   margin-left:25px;
+  margin-right:25px;
   font-family:Tahoma;
-  border:2px solid #000066;
   padding:5px;
 }
 h2, h3{

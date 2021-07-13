@@ -19,9 +19,17 @@
     <h2>AngularJS directives</h2>
     <dl>
       <dt>ng-app directive</dt>
-      <dd>ng-app directive defines AngularJS application</dd>
+      <dd>ng-app directive defines the root element of an AngularJS application.<br>
+       ng-app directive will auto-bootstrap(automatically initializes) the application when a web page is loaded.</dd>
       <dt>ng-model directive</dt>
-      <dd>ng-model directive binds the values of HTML controls(input, textarea, select) to application data.</dd>
+      <dd>ng-model directive binds the values of HTML controls(input, textarea, select) to application data.<br>
+      ng-model directive can also:
+      <ul>
+        <li>provide type validation to application data(number, email, required)</li>
+        <li>provide status for application data(invalid, dirty, touched, error)</li>
+        <li>provide css classes for HTML elements</li>
+        <li>provide HTML elements to HTML forms</li>
+      </ul></dd>
       <dt>ng-bind directive</dt>
       <dd>ng-bind directive binds application data to HTML view</dd>
       <dt>ng-init directive</dt>
@@ -34,6 +42,6 @@
     and a module is a container for application controllers. Controllers always belongs to a module.</p>
     <h3>creating a module</h3>
     <p>A module is created by using angular.module</p>
-    
+
   </body>
 </html>

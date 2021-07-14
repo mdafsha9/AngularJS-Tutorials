@@ -28,6 +28,11 @@
         <span ng-show="myForm.myAddress.$error.email">not a valid email address</span>
         <p style="color:red">Enter your email address in the input field. AngularJS will display error message if the email address is not valid.</p>
       </form>
+
+      <h3>Repeating HTML elements</h3>
+      <ul>
+        <li ng-repeat="item in items">{{item}}</li>
+      </ul>
     </div>
 
   </body>

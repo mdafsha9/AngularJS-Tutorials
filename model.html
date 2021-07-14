@@ -21,6 +21,13 @@
       <h3>Two-way data binding</h3>
       Firstname:<input type="text" size="25" ng-model="fname">
       <p>Your first name is {{fname}}</p>
+
+      <h3>Validate user input</h3>
+      <form name="myForm">
+        Email:<input type="email" name="myAddress" ng-model="text">
+        <span ng-show="myForm.myAddress.$error.email">not a valid email address</span>
+        <p style="color:red">Enter your email address in the input field. AngularJS will display error message if the email address is not valid.</p>
+      </form>
     </div>
 
   </body>

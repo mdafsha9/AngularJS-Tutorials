@@ -33,6 +33,10 @@
       <ul>
         <li ng-repeat="item in items">{{item}}</li>
       </ul>
+      <h3>ng-repeat directive used an array of objects</h3>
+      <ul>
+        <li ng-repeat="name in names">{{name.name +" , " +name.age}}</li>
+      </ul>
     </div>
 
   </body>

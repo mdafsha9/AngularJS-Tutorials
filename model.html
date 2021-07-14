@@ -15,8 +15,13 @@
   <body>
     <h1>AngularJS</h1>
     <div ng-app="myApp" ng-controller="myCtrl">
-      <p>One-way data binding</p>
+      <h3>One-way data binding</h3>
       Name:<input type="text" ng-model="name">
+
+      <h3>Two-way data binding</h3>
+      Firstname:<input type="text" size="25" ng-model="fname">
+      <p>Your first name is {{fname}}</p>
     </div>
+
   </body>
   </html>

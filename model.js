@@ -5,4 +5,5 @@ app.controller("myCtrl", function($scope){
 
   $scope.items=["Apple", "Orange", "Grapes", "Pine-apple"];
   $scope.names=[{name:'Afsha', age:31},{name:'Raghava', age:31},{name:'Isha', age:2}];
+  $scope.namings=["Element Name(E)", "Attribute(A)", "Class(C)", "Comment(M)"];
 });

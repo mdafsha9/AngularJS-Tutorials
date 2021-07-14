@@ -20,3 +20,9 @@ app.directive("test1Directive", function(){
     template:"<h3>Custom Directive Type-2</h3><p>Invoking a directive by using Attribute</p>"
   };
 });
+app.directive("test2Directive", function(){
+  return{
+    restrict:"C",
+    template:"<h3>Custom directive Type-3</h3><p>Invoking a directive by using class attribute</p>"
+  }
+})

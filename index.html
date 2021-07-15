@@ -10,6 +10,7 @@
     <title>AngularJS</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>AngularJS</h1>
@@ -42,11 +43,18 @@
     and a module is a container for application controllers. Controllers always belongs to a module.</p>
     <h3>creating a module</h3>
     <p>A module is created by using angular.module</p>
-    <h32>AngularJS Controllers</h2>
+    <h2>AngularJS Controllers</h2>
     <p>AngularJS controller controls the data of AngularJS application.<br>
     AngularJS controllers are regular JavaScript objects.<br>
     AngularJS applications are controlled by controllers.<br>
     ng-controller directive defines the application controller.<br>
     A controller is a JavaScript object, created by a standard JavaScript object constructor.</p>
+
+    <div ng-app="myApp1" ng-controller="myCtrl">
+    <h2>AngularJS Data Binding</h2>
+    <ul>
+      <li ng-repeat="ctrlList in ctrlLists">{{ctrlList}}</li>
+    </ul>
+  </div>
   </body>
 </html>

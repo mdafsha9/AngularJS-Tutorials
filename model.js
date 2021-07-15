@@ -24,5 +24,12 @@ app.directive("test2Directive", function(){
   return{
     restrict:"C",
     template:"<h3>Custom directive Type-3</h3><p>Invoking a directive by using class attribute</p>"
-  }
-})
+  };
+});
+app.directive("test3Directive", function(){
+  return{
+    restrict:"M",
+    replace:true,
+    template:"<h3>Custom directive Type-4</h3><p>Invoking a directive by using comment<br>Here we added a replace property, otherwise comment would be invisible</p>"
+  };
+});

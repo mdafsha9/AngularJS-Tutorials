@@ -58,6 +58,9 @@
       <h3>upper & lower case</h3>
       <p>Your first name is {{name | uppercase}}</p>
       <p>Your last name is {{fname | lowercase}}</p>
+      <ul>
+        <li ng-repeat="item in items| filter:'p'">{{item }}</li>
+      </ul>
 
 
     </div>

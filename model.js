@@ -41,3 +41,7 @@ app.run(function($rootScope){
 app.controller("myCtrl1", function($scope){
   $scope.color="blue";
 })
+
+app.controller("myCtrl", function($scope){
+  $scope.personalNames = ["Jani", "Rani", "Phani", "Mani", "Suzi", "Aaryana", "Rahul", "Sahoo", "Droona"];
+})

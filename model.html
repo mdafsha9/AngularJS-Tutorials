@@ -61,6 +61,12 @@
       <ul>
         <li ng-repeat="item in items| filter:'p'">{{item }}</li>
       </ul>
+      <h2>AngularJS Scope & rootScope</h2>
+      <p>Rootscope:favouirate color is : {{color}}</p>
+      <div ng-controller="myCtrl1">
+        <p>Scope:favouirate color is :{{color}}</p>
+      </div>
+      <p>Rootscope:favouirate color still is : {{color}}</p>
 
 
     </div>

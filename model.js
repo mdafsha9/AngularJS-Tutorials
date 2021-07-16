@@ -33,3 +33,10 @@ app.directive("test3Directive", function(){
     template:"<h3>Custom directive Type-4</h3><p>Invoking a directive by using comment<br>Here we added a replace property, otherwise comment would be invisible</p>"
   };
 });
+
+app.run(function($rootScope){
+  $rootScope.color="red";
+});
+app.controller("myCtrl1", function($scope){
+  $scope.color="blue";
+})

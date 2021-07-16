@@ -45,3 +45,11 @@ app.controller("myCtrl1", function($scope){
 app.controller("myCtrl", function($scope){
   $scope.personalNames = ["Jani", "Rani", "Phani", "Mani", "Suzi", "Aaryana", "Rahul", "Sahoo", "Droona"];
 })
+app.filter("myFilter", function(){
+  return function(input){
+    return input;
+  };
+});
+app.controller("myCtrl", function($scope){
+  $scope.tutorial="AngularJS Tutorials";
+});

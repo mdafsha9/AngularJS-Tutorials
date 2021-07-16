@@ -74,8 +74,9 @@
       <ul>
         <li ng-repeat="personalname in personalNames | filter:test">{{personalname}}</li>
       </ul>
-
-
+      <h2>Custom filter</h2>
+      <p>We can make our own filter by registering a filter factory function with our module</p>
+      <p>This tutorial is a {{tutorial | myFilter}}</p>
     </div>
 
   </body>

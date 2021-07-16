@@ -7,6 +7,7 @@ app.controller("myCtrl", function($scope){
   $scope.names=[{name:'Afsha', age:31},{name:'Raghava', age:31},{name:'Isha', age:2}];
   $scope.namings=["Element Name(E)", "Attribute(A)", "Class(C)", "Comment(M)"];
   $scope.price = 60;
+  $scope.contents=[{name:'Joy', country:'Russia'},{name:'Roy', country:'Australia'},{name:'Toy', country:'America'},{name:'Royal', country:'Africa'}];
 });
 
 

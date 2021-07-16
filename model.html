@@ -51,6 +51,12 @@
       <div test1-directive></div>
       <div class="test2-directive"></div>
       <!--test3-directive-->
+      <h2>AngularJS Scope & rootScope</h2>
+      <p>Rootscope:favouirate color is : {{color}}</p>
+      <div ng-controller="myCtrl1">
+        <p>Scope:favouirate color is :{{color}}</p>
+      </div>
+      <p>Rootscope:favouirate color still is : {{color}}</p>
 
       <h2>AngularJS Filters</h2>
       <h3>currency</h3>
@@ -61,12 +67,10 @@
       <ul>
         <li ng-repeat="item in items| filter:'p'">{{item }}</li>
       </ul>
-      <h2>AngularJS Scope & rootScope</h2>
-      <p>Rootscope:favouirate color is : {{color}}</p>
-      <div ng-controller="myCtrl1">
-        <p>Scope:favouirate color is :{{color}}</p>
-      </div>
-      <p>Rootscope:favouirate color still is : {{color}}</p>
+      <ul>
+        <li ng-repeat="content in contents|orderBy:'country'">{{content.name +" , "+content.country}}</li>
+      </ul>
+
 
 
     </div>

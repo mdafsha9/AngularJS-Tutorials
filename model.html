@@ -17,18 +17,18 @@
     <div ng-app="myApp" ng-controller="myCtrl">
       <h3>One-way data binding</h3>
       Name:<input type="text" ng-model="name">
-
+      <hr>
       <h3>Two-way data binding</h3>
       Firstname:<input type="text" size="25" ng-model="fname">
       <p>Your first name is {{fname}}</p>
-
+      <hr>
       <h3>Validate user input</h3>
       <form name="myForm">
         Email:<input type="email" name="myAddress" ng-model="text">
         <span ng-show="myForm.myAddress.$error.email">not a valid email address</span>
         <p style="color:red">Enter your email address in the input field. AngularJS will display error message if the email address is not valid.</p>
       </form>
-
+      <hr>
       <h3>Repeating HTML elements</h3>
       <ul>
         <li ng-repeat="item in items">{{item}}</li>
@@ -37,7 +37,7 @@
       <ul>
         <li ng-repeat="name in names">{{name.name +" , " +name.age}}</li>
       </ul>
-
+      <hr>
       <h2>Custom directives</h2>
       <p>AngularJS provides built-in directives which offers functionality to our application.In AngularJS we can create our own custom directives also.<br>
       New directives are created by using .directive function. To invoke a directive, make an HTML element with the same tag name as a new directive.<br>
@@ -77,6 +77,31 @@
       <h2>Custom filter</h2>
       <p>We can make our own filter by registering a filter factory function with our module</p>
       <p>This tutorial is a {{tutorial | myFilter}}</p>
+
+      <h2>Share data between controllers using custom service</h2>
+      <h3>Controller 1</h3>
+      <div ng-controller="myCtrl01">
+        Please enter product name:<input type="text" ng-model="product.name"><br>
+        Please enter product price:<input type="number" ng-model="product.price"><br>
+        Product Name:{{product.name}}<br>
+        Product Price:{{product.price | currency}}<br>
+      </div>
+      <h3>Controller 2</h3>
+      <div ng-controller="myCtrl02">
+        Product Name:{{product.name}}<br>
+        Product Price:{{product.price | currency}}
+      </div>
+
+      <div ng-controller="myCtrl9">
+        <input type="text" ng-model="thing.menu">
+        <input type="text" ng-model="thing.cost">
+        {{thing.menu}}
+        {{thing.cost}}
+      </div>
+      <div ng-controller="myCtrl8">
+        {{thing.menu}}
+        {{thing.cost|currency}}
+      </div>
     </div>
 
   </body>

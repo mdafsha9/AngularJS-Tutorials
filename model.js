@@ -53,3 +53,13 @@ app.filter("myFilter", function(){
 app.controller("myCtrl", function($scope){
   $scope.tutorial="AngularJS Tutorials";
 });
+app.service("dataShared", function(){
+  return product = {name:'', price:''};
+  return product;
+})
+app.controller("myCtrl01", function($scope, dataShared){
+  $scope.product = dataShared;
+})
+app.controller("myCtrl02", function($scope, dataShared){
+  $scope.product = dataShared;
+})

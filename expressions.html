@@ -22,5 +22,13 @@
       <li>AngularJS expressions do not support conditionals, loops and exceptions, while JavaScript expressions do</li>
       <li>AngularJS expressions can support filters while JavaScript expressions do not</li>
     </ul>
+    <div ng-app="">
+      Name:<input type="text" ng-model="name"><br>
+      <h4>expression</h4>
+      {{name}}
+      <h4>ng-bind directive</h4>
+      <span ng-bind="name"></span>
+    
+    </div>
   </body>
   </html>

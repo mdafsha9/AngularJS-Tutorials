@@ -22,13 +22,30 @@
       <li>AngularJS expressions do not support conditionals, loops and exceptions, while JavaScript expressions do</li>
       <li>AngularJS expressions can support filters while JavaScript expressions do not</li>
     </ul>
+    <!-- <div ng-app>
+      <p>The sum of two numbers is {{5+5}}</p>
+    </div> -->
+
     <div ng-app="">
-      Name:<input type="text" ng-model="name"><br>
-      <h4>expression</h4>
-      {{name}}
-      <h4>ng-bind directive</h4>
-      <span ng-bind="name"></span>
-    
+      <h2>Angularjs numbers</h2>
+      <div ng-init="a=1; b=5">
+      <p>The sum of reult is {{a+b}}</p>
+      <span ng-bind="a+b"></span>
     </div>
+    <h2>Angularjs strings</h2>
+    <div ng-init="firstName='Lorie'; lastName='Wright'">
+      {{firstName+ ' ' + lastName}}
+      <p>My name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+    </div>
+    <h2>Angularjs objects</h2>
+    <div ng-init="person={firstName:'Querry', lastName:'Leo'}">
+      {{person.firstName+ ' ' + person.lastName}}
+      <p>My name is <span ng-bind="person.firstName + ' ' + person.lastName"></span></p>
+    </div>
+    <h2>Angularjs Arrays</h2>
+    <div ng-init="points=[1, 5, 6, 8, 7, 10]">
+      {{points[2]}}
+      <span ng-bind="points[3]"></span>
+  </div>
   </body>
   </html>

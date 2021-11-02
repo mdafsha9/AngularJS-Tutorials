@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="us-en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <h1>AngularJS</h1>
+    <h2>AngularJS Modules</h2>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      FirstName: <input type="text" ng-model="firstName"><br>
+      LastName: <input type="text" ng-model="lastName"><br>
+      {{firstName + " " + lastName}}
+    </div>
+    <h2>AngularJS Directives</h2>
+    <div ng-app="">
+      <div ng-init="quantity=1; prices=5 ">
+        Quantity:<input type="number" ng-model="quantity"><br>
+        Prices:<input type="number" ng-model="prices"><br>
+        {{quantity * prices}}
+      </div>
+    </div>
+    <script src="myApp.js"></script>
+    <script src="myCtrl.js"></script>
+  </body>
+  </html>

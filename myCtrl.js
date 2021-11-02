@@ -7,7 +7,8 @@ app.controller("myCtrl", function($scope){
 //invoke a directive using element name, attribute,class
 app1.directive("w3TestDirective", function(){
   return{
-    restrict : "C",
+    restrict : "M",
+    replace : true,
     template : "<h3>made a directive</h3>"
   };
 });

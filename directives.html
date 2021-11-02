@@ -28,7 +28,7 @@
       <li>ng-controller defines angularjs controller</li>
       <li>ng-repeat directive repeats an HTML element. Actually ng-repeat directive clones HTML element once for each item in a collection</li>
     </ul>
-    <div ng-app="">
+    <!-- <div ng-app="">
       <div ng-init="quantity=1; prices=5 ">
         Quantity:<input type="number" ng-model="quantity"><br>
         Prices:<input type="number" ng-model="prices"><br>
@@ -45,7 +45,29 @@
           <li ng-repeat="y in persons">{{y.person + " ," + y.country}}</li>
         </ul>
       </div>
+    </div> -->
+    <h2>Creating our own directive</h2>
+    <ul>
+      <li>Create a new directive by using .directive function</li>
+      <li>To invoke a new directive, make an HTML element with the same tag name as new directive</li>
+      <li>When naming a new directive, we must use camelCase when invoking it, we must use - seperated name </li>
+    <li>WE can invoke a directive by using</li>
+    <ul>
+      <li>element name</li>
+      <li>attribute</li>
+      <li>class</li>
+      <li>comments</li>
+    </ul>
+    </ul>
+
+    <div ng-app="myApp1">
+      <h3>Invoke a directive using element name</h3>
+      <w3-test-directive></w3-test-directive>
+      <h3>Invoke a directive using attribute</h3>
+      <div w3-test-directive></div>
     </div>
 
+    <script src="myApp.js"></script>
+    <script src="myCtrl.js"></script>
   </body>
   </html>

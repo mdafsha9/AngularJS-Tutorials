@@ -39,6 +39,12 @@
           <li ng-repeat="x in names">{{x}}</li>
         </ul>
       </div>
+      <h2>ng-repeat directive repeats an array of objects</h2>
+      <div ng-init="persons=[{person:'Kohli', country:'India'},{person:'Sachin', country:'UK'},{person:'Dhoni', country:'Russia'}]">
+        <ul>
+          <li ng-repeat="y in persons">{{y.person + " ," + y.country}}</li>
+        </ul>
+      </div>
     </div>
 
   </body>

@@ -12,3 +12,9 @@ app1.directive("w3TestDirective", function(){
     template : "<h3>made a directive</h3>"
   };
 });
+
+//for data Binding
+app2.controller("myCtrl1", function($scope){
+  $scope.firstName = "John";
+  $scope.lastName = "Hue";
+})

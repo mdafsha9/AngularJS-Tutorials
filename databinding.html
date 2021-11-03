@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="us-en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <h1>AngularJS</h1>
+    <h2>AngularJS Data Binding</h2>
+    <p>Data binding in angularJS is the synchronization between the model and the view.<br>
+    In angularjs application usually have a data model. The data model is a collection of data available for the application.</p>
+    <dl>
+      <dt>One-way-data binding</dt>
+      <dd>Changes in the model are reflected in the view but chnages in the view are not reflected in the model. The binding is one-way from the model to view.This is achieved by making use of ng-bind directive</dd>
+      <dt>Two-way-data binding</dt>
+      <dd>Changes in the model are reflected in the view as well as changes in the view are reflected in the model.This is acheived by making use of ng-model directive</dd>
+    </dl>
+    <h2>One-way-data binding</h2>
+      <!--  <div ng-app>
+
+      <div ng-init="firstname='Lorie'">
+        <p>My firstname is {{firstname}}</p>
+      <div>-->
+    <div ng-app="myData" ng-controller="myCtrl1">
+      <h2>Two-way-data binding</h2>
+      FirstName:<input type="text" ng-model="firstName">
+      <p>My firstname is {{firstName}}</p>
+      LastName:<input type="text" ng-model="lastName">
+      <p>My lastname is {{lastName}}</p>
+    </div>
+    <script src="myApp.js"></script>
+    <script src="myCtrl.js"></script>
+  </body>
+  </html>

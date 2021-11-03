@@ -56,5 +56,10 @@
       <li>Two-way binding</li>
       <li>Interpolation binding</li>
     </ol>
+    <h2>Digest cycle or digest phase</h2>
+    <p>The digest cycle or digest phase is the most important for the data binding process. It does the task of comparing old version of the model with its new version. Whenever
+    a change in the scope model is found during the comparison, the model watches are fired and another digest cycle initialize until the scope is stable.</p>
+    <p>The disgest cycle can be triggered manually by making use of $apply() or can be triggered automatically. The digest cycle gets triggered automatically when we use the core directives of AngularJS.
+    In case we have any external code changes, then that would require manual triggering of the digest cycle.</p>
   </body>
   </html>

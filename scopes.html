@@ -32,6 +32,8 @@
       <li>The $rootScope is available in the entire application</li>
       <li>if a variable has the same name for the current scope and $rootScope, the application uses the one in the current scope</li>
     </ul>
+    <h2>scope hierarchy</h2>
+    <p>Every application developed in AngularJS has one $rootScope object and many child $scope objects. when a new scope is created that is added to the parent scope. This results the creation of hierarhy structure like DOM structure.</p>
     <div ng-app="mySc">
       <h3>rootscope color is</h3>
         {{color}}

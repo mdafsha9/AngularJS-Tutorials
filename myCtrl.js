@@ -18,3 +18,11 @@ app2.controller("myCtrl1", function($scope){
   $scope.firstName = "John";
   $scope.lastName = "Hue";
 })
+
+//for Scope
+app3.run(function($rootScope){
+  $rootScope.color = "red";
+});
+app3.controller("myCtrlSc", function($scope){
+  $scope.color = "blue";
+});

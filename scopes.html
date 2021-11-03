@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="us-en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <h1>AngularJS</h1>
+    <h2>AngularJS Scope</h2>
+    <ul>
+      <li>The scope is the binding part between the HTML(view) and the JavaScript(controller)</li>
+      <li>The scope is an object with the available properties and methods</li>
+      <li>The scope is availbale for both view and controller</li>
+      <li>When we make a controller in angularjs application, we pass a $scope object as an argument</li>
+      <li>when adding properties to $scope object in the controller, view(HTML) gets access to these properties
+    </ul>
+    <h3>Understanding the scope</h3>
+    <ul>
+      <li>Angularjs application consists of</li>
+      <li>the template(view), which is the HTML</li>
+      <li>the scope(model), which is the data available in the current view</li>
+      <li>the controller, which is the JavaScript function that makes/changes/removes/control the data</li>
+    </ul>
+      <p>Then the scope is model.<br>
+      The scope is a Javascript object with the properties and methods, which are available for both view and controller</p>
+    <h2>rootScope</h2>
+    <ul>
+      <li>All applications have $rootScope which is the scope created on the HTML element that contains ng-app directive</li>
+      <li>The $rootScope is available in the entire application</li>
+      <li>if a variable has the same name for the current scope and $rootScope, the application uses the one in the current scope</li>
+    </ul>
+    <div ng-app="mySc">
+      <h3>rootscope color is</h3>
+        {{color}}
+      <div ng-controller="myCtrlSc">
+        <h3>controller scope color is</h3>
+        {{color}}
+      </div>
+      <h3>rootscope color is</h3>
+        {{color}}
+    </div>
+    <script src="myApp.js"></script>
+    <script src="myCtrl.js"></script>
+  </body>
+</html>

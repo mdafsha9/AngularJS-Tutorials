@@ -7,3 +7,6 @@ var app1 = angular.module("myApp1", []);
 var app2 = angular.module("myData", []);
 
 var app3 =angular.module("mySc", []);
+
+//for filters
+var app4 = angular.module("myFi", []);

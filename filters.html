@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="us-en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="model.js"></script>
+  </head>
+  <body ng-app="myFi">
+    <h1>AngularJS</h1>
+    <h2>AngularJS Filters</h2>
+    <div ng-controller="myCtrlFi">
+      Filter : <input type="text" ng-model="searchText">
+      <table width="500px" border="1px solid grey">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Country</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees | filter:searchText | orderBy:'country'">
+              <td>{{employee.firstName | uppercase}}</td>
+              <td>{{employee.lastName | lowercase}}</td>
+              <td>{{employee.country}}</td>
+              <td>{{employee.price | currency}}</td>
+            </tr>
+        </tbody>
+      </table>
+      </div>
+      <script src="myApp.js"></script>
+      <script src="myCtrl.js"></script>
+  </body>
+</html>

@@ -11,6 +11,18 @@
   <body ng-app="myFi">
     <h1>AngularJS</h1>
     <h2>AngularJS Filters</h2>
+    <p>Filters can be added in AngularJS to format data.We have some predefined </p>
+      <ul>
+        <li>uppercase</li>
+        <li>lowercase</li>
+        <li>orderBy</li>
+        <li>limitTo</li>
+        <li>Date</li>
+        <li>filter</li>
+        <li>currency</li>
+        <li>number</li>
+        <li>json</li>
+      </ul>
     <div ng-controller="myCtrlFi">
       Filter : <input type="text" ng-model="searchText">
       <table width="500px" border="1px solid grey">
@@ -32,6 +44,21 @@
         </tbody>
       </table>
       </div>
+      <h2>Custom filters</h2>
+      <h3>Custom filters format</h3>
+      index.html file
+      <pre>
+        Enter text :<input type="text" ng-model="msz"><br>
+        Result: {{msz |  filter_name}}
+      </pre>
+      script.js file
+      <pre>
+      app.filter("filter_name", function(){
+        return function(para){
+
+        };
+      });
+      </pre>
       <script src="myApp.js"></script>
       <script src="myCtrl.js"></script>
   </body>

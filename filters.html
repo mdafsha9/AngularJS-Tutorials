@@ -45,7 +45,7 @@
       </table>
       </div>
       <h2>Custom filters</h2>
-      <h3>Custom filters format</h3>
+      <!-- <h3>Custom filters format</h3>
       index.html file
       <pre>
         Enter text :<input type="text" ng-model="msz"><br>
@@ -58,7 +58,10 @@
 
         };
       });
-      </pre>
+      </pre> -->
+      <h2>Custom filters example</h2>
+      Enter text here : <input type="text" ng-model="msz"><br>
+      Result:{{msz | reverse}}
       <script src="myApp.js"></script>
       <script src="myCtrl.js"></script>
   </body>

@@ -36,3 +36,15 @@ app4.controller("myCtrlFi", function($scope){
     {firstName:'Carly', lastName:'Jue', country:'Germany', price:45},
     {firstName:'Royal', lastName:'Roman', country:'Russia', price:31}];
 });
+
+//custom filters
+app4.filter("reverse", function( ){
+  return function(text){
+      text = text || " ";
+      var out = " ";
+      for(var i=text.length-1; i>=0; i--){
+        out += text[i];
+      }
+      return out;
+  };
+});

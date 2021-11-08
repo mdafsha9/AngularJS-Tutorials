@@ -14,6 +14,29 @@
     <div ng-hide="isHidden">
       <p>ng-show drectve</p>
     </div>
-    
+    <h2>ng-switch directive</h2>
+     My favouriate topic is : <select ng-model="myVar">
+       <option value="Dogs">Dogs
+        <option value="Cars">Cars
+      <option value="Tutorials">Tutorials
+      </select>
+      <div ng-switch="myVar">
+        <div ng-switch-when="Dogs">
+          <h1>Dogs</h1>
+          <p>Welcome! All world wde Dogs.</p>
+        </div>
+        <div ng-switch-when="Cars">
+          <h1>Cars</h1>
+          <p>Your favouriate car model is here</p>
+        </div>
+        <div ng-switch-when="Tutorials">
+          <h1>Tutorials</h1>
+          <p>Learn your nteresting course here</p>
+        </div>
+        <div ng-switch-default>
+          <h1>Switch</h1>
+          <p>Select topic form the dropdown, to switch the content of ths DiV element</p>
+        </div>
+      </div>
   </body>
 </html>

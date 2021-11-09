@@ -48,3 +48,8 @@ app4.filter("reverse", function( ){
       return out;
   };
 });
+
+//for service current location
+app5.controller("myCtrlLoc", function($scope, $location){
+  $scope.myUrl = $location.absUrl();
+});

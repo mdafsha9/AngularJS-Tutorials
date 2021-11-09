@@ -10,3 +10,6 @@ var app3 =angular.module("mySc", []);
 
 //for filters
 var app4 = angular.module("myFi", []);
+
+//for services current $location
+var app5 = angular.module("myAppLoc", []);

@@ -13,3 +13,6 @@ var app4 = angular.module("myFi", []);
 
 //for services current $location
 var app5 = angular.module("myAppLoc", []);
+
+////Create our own service
+var app6 = angular.module("myAppOwn", []);

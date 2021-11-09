@@ -53,3 +53,13 @@ app4.filter("reverse", function( ){
 app5.controller("myCtrlLoc", function($scope, $location){
   $scope.myUrl = $location.absUrl();
 });
+
+//creating our own service
+app6.service("myServ", function($http){
+  this.squareOfNumbers = function(x){
+    return x * x;
+  }
+});
+app6.controller("myCtrlOwn", function($scope, myServ){
+  $scope.getResult = myServ.squareOfNumbers(10);
+});

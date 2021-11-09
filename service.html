@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
-  <body ng-app="myAppLoc" ng-controller="myCtrlLoc">
+  <body >
     <h1>AngularJS</h1>
-    <h2>AngularJS Services</h2>
-    <p>In AngularJS, we can make our own service, angularjs has 30 built-in services.</p>
-    <h2>$location</h2>
-    <p>One of the service is $location, which returns information about the locaton of the current web page</p>
-    <p>Current loction of the web page {{myUrl}}</p>
+    <!-- <div ng-app="myAppLoc" ng-controller="myCtrlLoc">
+      <h2>AngularJS Services</h2>
+      <p>In AngularJS, service is a function which is used to handle server communication over the browser with the help XMLHttpRequest object and $http.<br>
+      in angularjs we have 30 built-in services like $http, $location, $timeout, $interval etc., these are used to share data and its behaviour in the controllers, filters, directives and other services over the application. We can create our own services also based on our requirements.</p>
+      <h2>$location</h2>
+      <p>One of the service is $location, which returns information about the locaton of the current web page</p>
+      <p>Current loction of the web page {{myUrl}}</p>
+    </div> -->
+    <div ng-app="myAppOwn" ng-controller="myCtrlOwn">
+      <h2>Create our own service</h2>
+      Square of numbers 10 is {{getResult }}
+    </div>
     <script src="myApp.js"></script>
     <script src="myCtrl.js"></script>
   </body>

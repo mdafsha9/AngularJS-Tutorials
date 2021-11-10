@@ -19,3 +19,6 @@ var app6 = angular.module("myAppOwn", []);
 
 //for factory services
 var app7 = angular.module("myAppFa", []);
+
+//for timeout services
+var app8 = angular.module("myAppTime", []);

@@ -79,3 +79,11 @@ app7.controller("myCtrlFa", function($scope, myFactory){
   $scope.myName = myFactory.getName();
   $scope.myCity = myFactory.getCity();
 })
+
+//for $timeout services
+app8.controller("myCtrlTime", function($scope, $timeout){
+  $scope.msz = "Services"
+  $timeout(function(){
+    $scope.msz="Timeout Services";
+  }, 1000);
+});

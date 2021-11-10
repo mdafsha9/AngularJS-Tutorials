@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngularJS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="model.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
-  <body ng-app="myFa">
+  <body ng-app="myAppFa" ng-controller="myCtrlFa">
     <h1>AngularJS</h1>
     <h2>AngularJS Factory</h2>
     <p>The factory services are used to communcate server wth the help of HTTP and also used to create reusable code for angularjs applicaton.
       The factories in angularjs wll also return a new instance for each object but it will not happen in services n angularjs</p>
-      <p>The major difference between services and factory i.e., we can run custom code in the factory. But n the services we can use only object creations     </p>       
+      <p>The major difference between services and factory i.e., we can run custom code in the factory. But n the services we can use only object creations     </p>
+      <h2>City : {{myCity}}</h2>
+    <h2>Her name is</h2>
+       <p>{{myName}}</p> 
+       <script src="myApp.js"></script>
+      <script src="myCtrl.js"></script>
+
   </body>
 </html>

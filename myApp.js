@@ -16,3 +16,6 @@ var app5 = angular.module("myAppLoc", []);
 
 ////Create our own service
 var app6 = angular.module("myAppOwn", []);
+
+//for factory services
+var app7 = angular.module("myAppFa", []);

@@ -63,3 +63,19 @@ app6.service("myServ", function($http){
 app6.controller("myCtrlOwn", function($scope, myServ){
   $scope.getResult = myServ.squareOfNumbers(10);
 });
+
+//for factory services
+app7.factory("myFactory", function(){
+  var obj = {};
+  obj.getName = function(){
+    return "Hello Geetha!";
+  }
+  obj.getCity = function(){
+    return "Guntur";
+  }
+  return obj;
+})
+app7.controller("myCtrlFa", function($scope, myFactory){
+  $scope.myName = myFactory.getName();
+  $scope.myCity = myFactory.getCity();
+})

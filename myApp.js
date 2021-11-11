@@ -22,3 +22,6 @@ var app7 = angular.module("myAppFa", []);
 
 //for timeout services
 var app8 = angular.module("myAppTime", []);
+
+//for interval services
+var app9 = angular.module("myAppInter", []);

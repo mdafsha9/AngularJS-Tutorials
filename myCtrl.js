@@ -87,3 +87,11 @@ app8.controller("myCtrlTime", function($scope, $timeout){
     $scope.msz="Timeout Services";
   }, 1000);
 });
+
+//for interval services
+app9.controller("myCtrlInter", function($scope, $interval){
+  $scope.message="Timeout only once";
+  $interval(function(){
+    $scope.message = "interval service repeatedly";
+  }, 1000);
+});

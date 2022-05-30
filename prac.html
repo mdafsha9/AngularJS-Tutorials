@@ -7,7 +7,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="script01.js" defer></script>
   </head>
-  <body>
-    
+  <body ng-app="">
+    <h1>AngularJS Expressions</h1>
+    <div ng-init="firstName='Lorie'; lastName='Wright'">
+      <p>My name is <span ng-bind="firstName+ ' ' +lastName"></span></p>
+      <p>My daughter name is {{firstName}}</p>
+    </div>
   </body>
 </html>

@@ -13,5 +13,9 @@
       <p>My name is <span ng-bind="firstName+ ' ' +lastName"></span></p>
       <p>My daughter name is {{firstName}}</p>
     </div>
+    <h2>AngularJS object are like JavaScript objects</h2>
+    <div ng-init="person={firstName:'John', lastName:'Whu'}">
+      <p>My firstName is {{person.firstName}}</p>
+    </div>
   </body>
 </html>

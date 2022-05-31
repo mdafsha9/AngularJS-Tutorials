@@ -7,19 +7,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="script01.js" defer></script>
   </head>
-  <body ng-app="">
-    <h1>AngularJS Expressions</h1>
-    <div ng-init="firstName='Lorie'; lastName='Wright'">
-      <p>My name is <span ng-bind="firstName+ ' ' +lastName"></span></p>
-      <p>My daughter name is {{firstName}}</p>
-    </div>
-    <h2>AngularJS object are like JavaScript objects</h2>
-    <div ng-init="person={firstName:'John', lastName:'Whu'}">
-      <p>My firstName is {{person.firstName}}</p>
-    </div>
-    <h2>AngularJS arrays are like JavaScript arrays</h2>
-    <div ng-init="points=[5,6,9,2,3]">
-      <p>My lucky number is {{points[2]}}</p>
+  <body ng-app="myApp">
+    <div ng-controller="myCtrl">
+      {{firstName + " " + lastName}}
     </div>
   </body>
 </html>
